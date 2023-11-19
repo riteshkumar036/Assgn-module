@@ -9,7 +9,7 @@ resource "aws_dynamodb_table" "my_table" {
   hash_key       =var.hash_key
   
   attribute {
-    name = dbkey
+    name = "dbkey"
     type = "S"
   }
 }
